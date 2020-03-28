@@ -65,20 +65,78 @@ const Expenses = ({
 );
 
 export async function getServerSideProps() {
-  const data = await fetchGraphqlApi(`
-    query getStats {
-      statsGroupedByPeriod {
-        value
-      }
-      statsGroupedByCategory {
-        id
-        categoryName
-        value
-      }
-    }
-  `);
+  const statsGroupedByPeriod = [
+    { value: 155 },
+    { value: 93 },
+    { value: 80 },
+    { value: 50 },
+    { value: 39 },
+    { value: 40 },
+    { value: 50 },
+    { value: 20 },
+    { value: 50 },
+    { value: 60 },
+    { value: 100 },
+    { value: 55 },
+    { value: 93 },
+    { value: 80 },
+    { value: 50 },
+    { value: 39 },
+    { value: 40 },
+    { value: 50 },
+    { value: 20 },
+    { value: 50 },
+    { value: 60 },
+    { value: 100 },
+    { value: 55 },
+    { value: 93 },
+    { value: 80 },
+    { value: 50 },
+    { value: 39 },
+    { value: 40 },
+    { value: 50 },
+    { value: 20 },
+    { value: 50 },
+    { value: 60 },
+    { value: 100 },
+    { value: 55 },
+    { value: 93 },
+    { value: 80 }
+  ].map(stat => ({
+    ...stat,
+    value: Math.ceil(stat.value * Math.random())
+  }));
 
-  const { statsGroupedByPeriod, statsGroupedByCategory } = data;
+  const statsGroupedByCategory = [
+    {
+      id: 1,
+      categoryName: "Food and Drink",
+      value: 872.4
+    },
+    {
+      id: 2,
+      categoryName: "Shopping",
+      value: 1378.2
+    },
+    {
+      id: 3,
+      categoryName: "Housing",
+      value: 928.5
+    },
+    {
+      id: 4,
+      categoryName: "Transportation",
+      value: 420.7
+    },
+    {
+      id: 5,
+      categoryName: "Vehicle",
+      value: 520.0
+    }
+  ].map(stat => ({
+    ...stat,
+    value: Math.ceil(stat.value * Math.random())
+  }));
 
   const expensesByPeriod = [
     {
