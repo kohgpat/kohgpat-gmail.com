@@ -1,0 +1,11 @@
+.topbar {
+  margin-bottom: 2rem;
+}
+
+.topbarTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.topbarBottom {}

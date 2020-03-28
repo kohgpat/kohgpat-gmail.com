@@ -1,0 +1,49 @@
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.main {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.categoryName {
+  font-size: 1rem;
+  margin: 0;
+  color: #101010;
+}
+
+.value {
+  font-size: 1rem;
+  margin: 0 0 0 auto;
+  color: #101010;
+}
+
+.meta {
+  display: flex;
+}
+
+.metaSeparator {
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  color: #C5C7CA;
+}
+
+.createdAt {
+  color: #C5C7CA;
+  font-size: 0.8rem;
+}
+
+.locationName {
+  color: #C5C7CA;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,29 @@
+.graph {
+  margin: 1rem 0;
+  height: 100px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.graphColumn {
+  position: relative;
+  min-width: 15px;
+  flex: 1;
+}
+
+.graphColumn:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.graphColumnContent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #d1e5fe;
+}
+
+.graphColumnContent:active,
+.graphColumnContent:hover,
+.graphColumnContent:focus {
+  background-color: #217efb;
+}

@@ -1,0 +1,12 @@
+.sidebar {
+  width: 25vw;
+  padding: 2rem;
+  background-color: #101010;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarSecondary {
+  background-color: #F9FAFC;
+}

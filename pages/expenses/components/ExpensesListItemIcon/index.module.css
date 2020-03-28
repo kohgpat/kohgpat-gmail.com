@@ -1,0 +1,26 @@
+.icon {
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.iconGrocery {
+  background-color: #3AA8E0;
+}
+
+.iconTransportation {
+  background-color: #B44EC4;
+}
+
+.iconHousing {
+  background-color: #FD8724;
+}
+
+.iconFoodAndDrink {
+  background-color: #DA363A;
+}
+
+.iconEntertainment {
+  background-color: #4FA743;
+}
