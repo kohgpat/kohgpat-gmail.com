@@ -15,12 +15,12 @@ import ExpensesList from "./components/ExpensesList";
 import ExpensesGraph from "./components/ExpensesGraph";
 import ExpensesSidebar from "./components/ExpensesSidebar";
 import ExpensesStats from "./components/ExpensesStats";
-import { UPDATE_STATS_INTERVAL } from './constants';
+import { UPDATE_STATS_INTERVAL } from "../../constants/expenses";
 import {
   getStatsGroupedByPeriod,
   getStatsGroupedByCategory,
   getExpensesByPeriod
-} from "./utils";
+} from "../../utils/expenses";
 
 const Expenses = ({
   statsGroupedByPeriod,
